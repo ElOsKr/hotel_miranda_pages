@@ -17,6 +17,11 @@
             &.active{
                 display: block;
             }
+            &:nth-child(2){
+                width: 14px;
+                height: 14px;
+                margin: 0 3px 0 3px;
+            }
         }
     }
     &__content{
@@ -43,7 +48,7 @@
 
         &-menu{
             display: none;
-            
+
             &.active{
                 display: block;
                 position: absolute;

@@ -1,6 +1,6 @@
 const openMenuButton = document.getElementById("openMenu");
 const closeMenuButton = document.getElementById("closeMenu");
-const menuHeader = document.getElementsByClassName("header__content-menu");
+const menuHeader = document.getElementsByClassName("header__content-menu")[0];
 
 openMenuButton.addEventListener("click",toggleMenu)
 

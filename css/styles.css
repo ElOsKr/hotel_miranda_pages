@@ -18,6 +18,11 @@
 .header__menu img.active {
   display: block;
 }
+.header__menu img:nth-child(2) {
+  width: 14px;
+  height: 14px;
+  margin: 0 3px 0 3px;
+}
 .header__content {
   flex: 1;
   display: flex;
