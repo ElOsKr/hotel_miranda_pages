@@ -1,8 +1,11 @@
+$font-Archivo: 'Archivo','sans-serif';
+$font-OldStandard: 'Old Standard TT', 'sans-serif';
+
 .header{
     position: relative;
-    font-family: 'Archivo','sans-serif';
+    font-family: $font-Archivo;
     box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.29);
-
+    z-index: 3;
     &__nav{
         display: flex;
         align-items: center;
@@ -30,15 +33,17 @@
         flex: 1;
         display: flex;
         justify-content: space-between;
-        
+
         &-logo{
             display: flex;
             align-items: center;
             &.logo__letter{
+                position: relative;
+                z-index: 4;
                 font-weight: 700;
                 margin-right: 15px;
                 padding: 10px;
-                box-shadow: 0px 14px 24px rgba(83, 83, 83, 0.25);
+                box-shadow: 0px 10px 24px rgba(126, 126, 126, 0.25);
             }
         }
 
@@ -52,11 +57,14 @@
         &-menu{
             display: none;
             &.active{
+                background-color: white;
                 display: block;
                 position: absolute;
                 width: 100%;
                 left: 0px;
-                top: 80px;
+                top: 75px;
+                z-index: 2;
+                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.29);
                 ul{
                     padding: 20px;
                     list-style: none;
