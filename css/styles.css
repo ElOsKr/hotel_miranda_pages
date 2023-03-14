@@ -1,0 +1,131 @@
+.header {
+  position: relative;
+  font-family: "Archivo", "sans-serif";
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.29);
+  z-index: 3;
+}
+.header__nav {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+.header__menu {
+  margin-right: 20px;
+}
+.header__menu img {
+  display: none;
+  cursor: pointer;
+}
+.header__menu img.active {
+  display: block;
+}
+.header__menu img:nth-child(2) {
+  width: 14px;
+  height: 14px;
+  margin: 0 3px 0 3px;
+}
+.header__content {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+}
+.header__content-logo {
+  display: flex;
+  align-items: center;
+}
+.header__content-logo.logo__letter {
+  position: relative;
+  z-index: 4;
+  font-weight: 700;
+  margin-right: 15px;
+  padding: 10px;
+  box-shadow: 0px 10px 24px rgba(126, 126, 126, 0.25);
+}
+.header__content-name {
+  font-size: 13px;
+}
+.header__content-name p:first-child {
+  font-weight: 700;
+}
+.header__content-menu {
+  display: none;
+}
+.header__content-menu.active {
+  background-color: white;
+  display: block;
+  position: absolute;
+  width: 100%;
+  left: 0px;
+  top: 75px;
+  z-index: 2;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.29);
+}
+.header__content-menu.active ul {
+  padding: 20px;
+  list-style: none;
+}
+.header__content-menu.active ul li {
+  margin-bottom: 20px;
+}
+.header__content-menu.active ul li a {
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
+}
+.header__content-options {
+  display: flex;
+  align-items: center;
+}
+.header__content-options img {
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.introduction {
+  background-color: #333333;
+  position: relative;
+  z-index: 1;
+  padding: 75px 20px;
+  font-family: "Archivo", "sans-serif";
+  color: white;
+}
+.introduction__caption {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+.introduction__title {
+  margin-top: 40px;
+  font-family: "Old Standard TT", "sans-serif";
+  font-size: 50px;
+  line-height: 60px;
+  font-weight: 400;
+}
+.introduction__btn {
+  color: white;
+  display: block;
+  padding: 23px 47px;
+  font-family: "Archivo", "sans-serif";
+  font-weight: 700;
+  letter-spacing: 3px;
+  cursor: pointer;
+  border: 1px solid #BEAD8E;
+}
+.introduction__btn.btn-tour {
+  margin-top: 40px;
+  background-color: #BEAD8E;
+}
+.introduction__btn.btn-learn {
+  margin-top: 20px;
+  background: none;
+}
+
+html, * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-width: 320px;
+}/*# sourceMappingURL=styles.css.map */
