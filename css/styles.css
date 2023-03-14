@@ -1,0 +1,81 @@
+.header {
+  position: relative;
+  font-family: "Archivo", "sans-serif";
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.29);
+}
+.header__nav {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+.header__menu {
+  margin-right: 20px;
+}
+.header__menu img {
+  display: none;
+  cursor: pointer;
+}
+.header__menu img.active {
+  display: block;
+}
+.header__content {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+}
+.header__content-logo {
+  display: flex;
+  align-items: center;
+}
+.header__content-logo.logo__letter {
+  font-weight: 700;
+  margin-right: 15px;
+  padding: 10px;
+  box-shadow: 0px 14px 24px rgba(83, 83, 83, 0.25);
+}
+.header__content-name {
+  font-size: 13px;
+}
+.header__content-name p:first-child {
+  font-weight: 700;
+}
+.header__content-menu {
+  display: none;
+}
+.header__content-menu.active {
+  display: block;
+  position: absolute;
+  width: 100%;
+  left: 0px;
+  top: 80px;
+}
+.header__content-menu.active ul {
+  padding: 20px;
+  list-style: none;
+}
+.header__content-menu.active ul li {
+  margin-bottom: 20px;
+}
+.header__content-menu.active ul li a {
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
+}
+.header__content-options {
+  display: flex;
+  align-items: center;
+}
+.header__content-options img {
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+html, * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-width: 320px;
+}/*# sourceMappingURL=styles.css.map */
