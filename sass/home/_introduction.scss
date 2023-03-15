@@ -1,12 +1,9 @@
-$font-Archivo: 'Archivo','sans-serif';
-$font-OldStandard: 'Old Standard TT', 'sans-serif';
-
 .introduction{
     background-color:#333333;
     position: relative;
     z-index: 1;
     padding: 75px 20px;
-    font-family: $font-Archivo;
+    font-family: var(--font-Archivo);
     color: white;
 
     &__caption{
@@ -17,7 +14,7 @@ $font-OldStandard: 'Old Standard TT', 'sans-serif';
 
     &__title{
         margin-top: 40px;
-        font-family: $font-OldStandard;
+        font-family: var(--font-OldStandard);
         font-size: 50px;
         line-height: 60px;
         font-weight: 400;
@@ -27,7 +24,7 @@ $font-OldStandard: 'Old Standard TT', 'sans-serif';
         color: white;
         display: block;
         padding: 23px 47px;
-        font-family: $font-Archivo;
+        font-family: var(--font-Archivo);
         font-weight: 700;
         letter-spacing: 3px;
         cursor: pointer;

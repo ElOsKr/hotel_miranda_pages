@@ -1,9 +1,6 @@
-$font-Archivo: 'Archivo','sans-serif';
-$font-OldStandard: 'Old Standard TT', 'sans-serif';
-
 .header{
     position: relative;
-    font-family: $font-Archivo;
+    font-family: var(--font-Archivo);
     box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.29);
     z-index: 3;
     &__nav{

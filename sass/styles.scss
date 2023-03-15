@@ -1,6 +1,7 @@
 @use 'header/header';
 @use 'home/introduction';
 @use 'home/availability';
+@use 'home/aboutUs';
 
 html, * {
     box-sizing: border-box;
@@ -8,6 +9,8 @@ html, * {
     padding: 0;
 }
 
-body {
-    min-width: 320px;
+:root{
+    --font-Roboto: 'Roboto';
+    --font-OldStandard: 'Old Standard TT';
+    --font-Archivo: 'Archivo';
 }

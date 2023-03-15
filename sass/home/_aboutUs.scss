@@ -1,0 +1,34 @@
+
+.aboutUs{
+
+    &__introduction{
+        background-color: #F9F9F9;
+        margin-top: 60px;  
+        padding: 20px;
+    }
+
+    &__caption{
+        font-family: var(--font-Archivo);
+        font-size: 13px;
+        font-weight: 700;
+        letter-spacing: 3px;
+        margin-top: 20px;
+        color: #777777;
+    }
+
+    &__title{
+        margin-top: 30px;
+        font-family: var(--font-OldStandard);
+        font-weight: 400;
+        font-size: 46px;
+    }
+
+    &__description{
+        margin-top: 20px;
+        color: #777777;
+        font-family: var(--font-Archivo);
+        line-height: 24px;
+        font-size: 14px;
+    }
+
+}

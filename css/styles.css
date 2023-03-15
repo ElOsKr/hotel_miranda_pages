@@ -1,6 +1,6 @@
 .header {
   position: relative;
-  font-family: "Archivo", "sans-serif";
+  font-family: var(--font-Archivo);
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.29);
   z-index: 3;
 }
@@ -86,7 +86,7 @@
   position: relative;
   z-index: 1;
   padding: 75px 20px;
-  font-family: "Archivo", "sans-serif";
+  font-family: var(--font-Archivo);
   color: white;
 }
 .introduction__caption {
@@ -96,7 +96,7 @@
 }
 .introduction__title {
   margin-top: 40px;
-  font-family: "Old Standard TT", "sans-serif";
+  font-family: var(--font-OldStandard);
   font-size: 50px;
   line-height: 60px;
   font-weight: 400;
@@ -105,7 +105,7 @@
   color: white;
   display: block;
   padding: 23px 47px;
-  font-family: "Archivo", "sans-serif";
+  font-family: var(--font-Archivo);
   font-weight: 700;
   letter-spacing: 3px;
   cursor: pointer;
@@ -120,9 +120,76 @@
   background: none;
 }
 
+::-webkit-calendar-picker-indicator {
+  background-image: url("../assets/home/home_calendar_icon.png");
+  margin-right: 10px;
+}
+
 .availability {
   background-color: #222222;
   color: white;
+  padding: 20px;
+}
+.availability__input {
+  font-family: var(--font-Roboto);
+  font-size: 14px;
+  padding-bottom: 5px;
+  width: 100%;
+  margin: 20px 0px;
+  background: none;
+  border: none;
+  border-bottom: 2px solid #BEAD8E;
+  color: #686868;
+  display: flex;
+  flex-direction: row-reverse;
+}
+.availability__input ::-webkit-calendar-picker-indicator {
+  color: #BEAD8E;
+}
+.availability__arrival label, .availability__departure label {
+  font-family: var(--font-Roboto);
+  font-weight: 700;
+  font-size: 16px;
+  display: block;
+}
+.availability__btn {
+  color: white;
+  display: block;
+  padding: 23px 27px;
+  font-family: var(--font-Roboto);
+  font-weight: 700;
+  letter-spacing: 3px;
+  cursor: pointer;
+  border: 1px solid #BEAD8E;
+  margin-top: 20px;
+  background-color: #BEAD8E;
+}
+
+.aboutUs__introduction {
+  background-color: #F9F9F9;
+  margin-top: 60px;
+  padding: 20px;
+}
+.aboutUs__caption {
+  font-family: var(--font-Archivo);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  margin-top: 20px;
+  color: #777777;
+}
+.aboutUs__title {
+  margin-top: 30px;
+  font-family: var(--font-OldStandard);
+  font-weight: 400;
+  font-size: 46px;
+}
+.aboutUs__description {
+  margin-top: 20px;
+  color: #777777;
+  font-family: var(--font-Archivo);
+  line-height: 24px;
+  font-size: 14px;
 }
 
 html, * {
@@ -131,6 +198,8 @@ html, * {
   padding: 0;
 }
 
-body {
-  min-width: 320px;
+:root {
+  --font-Roboto: "Roboto";
+  --font-OldStandard: "Old Standard TT";
+  --font-Archivo: "Archivo";
 }/*# sourceMappingURL=styles.css.map */
