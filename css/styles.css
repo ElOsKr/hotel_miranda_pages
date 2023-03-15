@@ -97,7 +97,7 @@
 .introduction__title {
   margin-top: 40px;
   font-family: var(--font-OldStandard);
-  font-size: 50px;
+  font-size: 56px;
   line-height: 60px;
   font-weight: 400;
 }
@@ -165,10 +165,13 @@
   background-color: #BEAD8E;
 }
 
+.aboutUs {
+  position: relative;
+}
 .aboutUs__introduction {
   background-color: #F9F9F9;
   margin-top: 60px;
-  padding: 20px;
+  padding: 20px 20px 175px 20px;
 }
 .aboutUs__caption {
   font-family: var(--font-Archivo);
@@ -182,7 +185,8 @@
   margin-top: 30px;
   font-family: var(--font-OldStandard);
   font-weight: 400;
-  font-size: 46px;
+  font-size: 56px;
+  overflow-wrap: break-word;
 }
 .aboutUs__description {
   margin-top: 20px;
@@ -190,6 +194,56 @@
   font-family: var(--font-Archivo);
   line-height: 24px;
   font-size: 14px;
+}
+.aboutUs__btn {
+  margin-top: 25px;
+  color: white;
+  display: block;
+  padding: 23px 60px;
+  font-family: var(--font-Roboto);
+  font-weight: 700;
+  letter-spacing: 3px;
+  cursor: pointer;
+  border: 1px solid #BEAD8E;
+  margin-top: 20px;
+  background-color: #BEAD8E;
+}
+.aboutUs__card {
+  margin: 0 auto;
+  width: min(80%, 600px);
+  background-color: #777777;
+  box-shadow: 0px 8px 16px rgba(34, 34, 34, 0.02);
+}
+.aboutUs__card.team {
+  position: relative;
+  top: -100px;
+}
+.aboutUs__card .card__img {
+  width: 100%;
+  height: 300px;
+}
+.aboutUs__card .card__img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.aboutUs__card .card__body {
+  padding-top: 55px;
+  padding-bottom: 40px;
+  text-align: center;
+}
+.aboutUs__card .card__body h2 {
+  margin-top: 30px;
+  font-family: var(--font-OldStandard);
+  font-size: 30px;
+  font-weight: 400;
+}
+.aboutUs__card .card__body p {
+  margin-top: 20px;
+  font-family: var(--font-Roboto);
+  font-size: 14px;
+  line-height: 22px;
 }
 
 html, * {
