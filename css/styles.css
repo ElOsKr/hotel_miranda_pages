@@ -227,24 +227,36 @@
   -o-object-fit: cover;
      object-fit: cover;
 }
+.aboutUs__card.luxuryRoom {
+  position: relative;
+  top: -50px;
+}
 .aboutUs__card .card__body {
   padding-top: 55px;
   padding-bottom: 40px;
   text-align: center;
   position: relative;
 }
+.aboutUs__card .card__body.colored {
+  background-color: #222222;
+  color: white;
+}
 .aboutUs__card .card__body .img__background {
   position: absolute;
-  opacity: 0.1;
   margin-left: 15px;
+  z-index: 1;
 }
-.aboutUs__card .card__body h2 {
+.aboutUs__card .card__body .card__title, .aboutUs__card .card__body .card__description, .aboutUs__card .card__body .img__colored {
+  position: relative;
+  z-index: 2;
+}
+.aboutUs__card .card__body .card__title {
   margin-top: 30px;
   font-family: var(--font-OldStandard);
   font-size: 30px;
   font-weight: 400;
 }
-.aboutUs__card .card__body p {
+.aboutUs__card .card__body .card__description {
   margin-top: 20px;
   font-family: var(--font-Roboto);
   font-size: 14px;

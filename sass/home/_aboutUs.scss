@@ -65,26 +65,41 @@
             }
         }
 
+        &.luxuryRoom{
+            position: relative;
+            top: -50px;
+        }
+
         .card__body{
             padding-top: 55px;
             padding-bottom: 40px;
             text-align: center;
             position: relative;
 
-            .img__background{
-                position: absolute;
-                opacity: 0.1;
-                margin-left: 15px;
+            &.colored{
+                background-color: #222222;
+                color: white;
             }
 
-            h2{
+            .img__background{
+                position: absolute;
+                margin-left: 15px;
+                z-index: 1;
+            }
+
+            .card__title, .card__description, .img__colored{
+                position: relative;
+                z-index: 2;
+            }
+
+            .card__title{
                 margin-top: 30px;
                 font-family: var(--font-OldStandard);
                 font-size: 30px;
                 font-weight: 400;
             }
 
-            p{
+            .card__description{
                 margin-top: 20px;
                 font-family: var(--font-Roboto);
                 font-size: 14px;
