@@ -35,4 +35,18 @@
             height: 100%;
         }
     }
+
+    &__btn{
+        margin-top: 35px;
+        color: white;
+        display: block;
+        padding: 22px 55px;
+        font-family: var(--font-Roboto);
+        font-weight: 700;
+        letter-spacing: 3px;
+        cursor: pointer;
+        border: 1px solid #BEAD8E;
+        margin-top: 20px;
+        background-color: #BEAD8E;
+    }
 }
