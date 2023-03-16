@@ -551,6 +551,118 @@
   font-size: 16px;
 }
 
+.footer {
+  margin-top: 40px;
+}
+.footer__main {
+  padding: 20px;
+  background-image: url("../assets/footer/footer_background.png");
+  background-repeat: repeat;
+}
+.footer__logo {
+  display: flex;
+  align-content: center;
+  gap: 30px;
+}
+.footer__logo .logo__letter {
+  font-family: var(--font-Archivo);
+  font-size: 40px;
+  font-weight: 700;
+  padding: 18px 24px;
+  color: white;
+  background-color: #BEAD8E;
+}
+.footer__logo .logo__name {
+  font-family: var(--font-Archivo);
+  font-size: 26px;
+  letter-spacing: 3px;
+  font-weight: 400;
+  align-self: center;
+}
+.footer__logo .logo__name-main {
+  font-weight: 700;
+}
+.footer__description {
+  margin-top: 50px;
+  font-family: var(--font-Archivo);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  color: #777777;
+}
+.footer__links {
+  margin-top: 32px;
+}
+.footer__links a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-color: #F8F8F8;
+}
+.footer__links a img {
+  transform: translate(33%, 33%);
+}
+.footer__links a:nth-child(2) img {
+  filter: invert(50%);
+}
+.footer__links a:hover {
+  background-color: #BEAD8E;
+}
+.footer__services {
+  margin-top: 30px;
+}
+.footer__services .services__title {
+  font-family: var(--font-OldStandard);
+  font-weight: 400;
+  font-size: 24px;
+}
+.footer__services .services__containter {
+  margin-top: 5px;
+  display: flex;
+  font-family: var(--font-Roboto);
+  font-size: 16px;
+  font-weight: 400;
+  color: #777777;
+}
+.footer__services .services__containter ul {
+  list-style: none;
+}
+.footer__services .services__containter ul li {
+  margin-top: 20px;
+}
+.footer__services .services__containter ul li::before {
+  content: "+ ";
+}
+.footer__contact {
+  margin-top: 32px;
+}
+.footer__contact .contact__title {
+  font-family: var(--font-OldStandard);
+  font-weight: 400;
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+.footer__contact .contact {
+  display: flex;
+  gap: 20px;
+}
+.footer__contact .contact:nth-child(n+1) {
+  margin-bottom: 60px;
+}
+.footer__contact .contact:last-child {
+  margin-bottom: 0px;
+}
+.footer__copyrigth {
+  background-color: #F8F8F8;
+  padding: 16px 20px;
+  font-family: var(--font-Roboto);
+  font-weight: 700;
+  font-size: 16px;
+}
+.footer__copyrigth p:first-child {
+  margin-bottom: 25px;
+}
+
 html, * {
   box-sizing: border-box;
   margin: 0;
