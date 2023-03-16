@@ -1,7 +1,5 @@
 .introduction{
     background-color:#333333;
-    position: relative;
-    z-index: 1;
     padding: 140px 20px 75px 20px;
     font-family: var(--font-Archivo);
     color: white;
@@ -39,6 +37,23 @@
             margin-top: 20px;
             background: none;
         }
-        
+    }
+
+    &__location{
+        margin-top: 45px;
+        margin-bottom: -75px;
+        text-align: end;
+        p{
+            display: inline-block;
+            font-family: var(--font-Archivo);
+            font-weight: 700;
+            padding: 16px 24px;
+            background-color: white;
+            color: black;
+            
+            .route{
+                color: #BEAD8E;
+            }
+        }
     }
 }
