@@ -7,6 +7,10 @@
 @use 'home/facilities';
 @use 'home/menu';
 @use 'home/stadistics';
+@use 'about/description';
+@use 'about/restaurant';
+@use 'about/facilities_about';
+@use 'about/counter';
 @use 'footer/footer';
 
 html, * {

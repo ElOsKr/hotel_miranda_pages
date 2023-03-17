@@ -62,6 +62,10 @@
 
             &:hover{
                 background-color: #BEAD8E;
+
+                img{
+                    filter: brightness(3);
+                }
             }
         }
     }

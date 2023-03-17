@@ -565,6 +565,220 @@
   font-size: 16px;
 }
 
+.description {
+  padding: 0 20px;
+}
+.description__video {
+  width: 100%;
+  height: 186px;
+}
+.description__video video {
+  width: 100%;
+  height: 100%;
+}
+.description__introduction {
+  margin-top: 36px;
+  font-family: var(--font-OldStandard);
+  font-size: 32px;
+  font-weight: 400;
+}
+.description__services {
+  margin: 50px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  width: min(100%, 500px);
+}
+.description__services .service {
+  width: 158px;
+  height: 158px;
+  text-align: center;
+  padding-top: 40px;
+}
+.description__services .service:nth-child(2) img {
+  filter: invert(35%) sepia(60%);
+}
+.description__services .service P {
+  font-family: var(--font-Archivo);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+.description__services .service:hover {
+  background-color: #BEAD8E;
+  color: white;
+}
+.description__services .service:hover img {
+  filter: brightness(2);
+}
+
+.restaurant {
+  padding: 20px 40px;
+}
+.restaurant__img {
+  height: 235px;
+  display: flex;
+  justify-content: center;
+}
+.restaurant__img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.restaurant__caption {
+  font-family: var(--font-Archivo);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  color: #777777;
+  margin-top: 32px;
+}
+.restaurant__title {
+  font-family: var(--font-OldStandard);
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 50px;
+  margin: 26px 0;
+}
+.restaurant__description {
+  color: #777777;
+  font-family: var(--font-Archivo);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 20px;
+}
+.restaurant__btn {
+  color: white;
+  display: block;
+  padding: 22px 45px;
+  font-family: var(--font-Roboto);
+  font-weight: 700;
+  letter-spacing: 3px;
+  cursor: pointer;
+  border: 1px solid #BEAD8E;
+  margin-top: 20px;
+  background-color: #BEAD8E;
+  margin-bottom: 80px;
+}
+
+.facilities-about {
+  text-align: center;
+  padding: 25px;
+  background-color: #222222;
+  color: white;
+}
+.facilities-about__caption {
+  font-family: var(--font-Archivo);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  margin-top: 35px;
+  color: #777777;
+}
+.facilities-about__title {
+  margin-top: 24px;
+  font-family: var(--font-OldStandard);
+  font-weight: 400;
+  font-size: 56px;
+  overflow-wrap: break-word;
+}
+.facilities-about__feature {
+  margin: 0 auto;
+  width: min(100%, 400px);
+  background-color: #292929;
+  padding: 0 20px 50px 20px;
+}
+.facilities-about__feature .feature__header {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+.facilities-about__feature .feature__number {
+  color: #222222;
+  font-family: var(--font-Archivo);
+  font-size: 120px;
+  font-weight: 700;
+  padding-bottom: 30px;
+}
+.facilities-about__feature .feature__img {
+  -o-object-fit: none;
+     object-fit: none;
+  align-self: flex-end;
+}
+.facilities-about__feature .feature__body {
+  text-align: start;
+}
+.facilities-about__feature .feature__title {
+  font-family: var(--font-OldStandard);
+  font-weight: 400;
+  font-size: 30px;
+}
+.facilities-about__feature .feature__description {
+  font-family: var(--font-Archivo);
+  font-weight: 400;
+  line-height: 24px;
+  color: #777777;
+  font-size: 14px;
+}
+
+.counter {
+  padding: 20px;
+}
+.counter__caption {
+  font-family: var(--font-Archivo);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  margin-top: 60px;
+  color: #777777;
+}
+.counter__title {
+  margin-top: 24px;
+  font-family: var(--font-OldStandard);
+  font-weight: 400;
+  font-size: 56px;
+  overflow-wrap: break-word;
+}
+.counter__container {
+  margin-top: 36px;
+}
+.counter__fact {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+.counter__fact .fact__text {
+  margin-right: 10px;
+}
+.counter__fact .fact__text p {
+  font-family: var(--font-Roboto);
+  font-weight: 400;
+  font-size: 16px;
+  color: #777777;
+}
+.counter__fact .fact__text h2 {
+  font-family: var(--font-OldStandard);
+  font-weight: 400;
+  font-size: 60px;
+}
+.counter__img {
+  margin-top: 24px;
+  margin-bottom: 60px;
+  width: 100%;
+  height: 230px;
+}
+.counter__img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .footer {
   margin-top: 40px;
 }
@@ -621,6 +835,9 @@
 }
 .footer__links a:hover {
   background-color: #BEAD8E;
+}
+.footer__links a:hover img {
+  filter: brightness(3);
 }
 .footer__services {
   margin-top: 30px;
