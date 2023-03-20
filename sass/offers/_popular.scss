@@ -1,0 +1,26 @@
+.popular{
+    background-color: #222222;
+    margin: 60px 0px;
+    text-align: center;
+    padding: 48px 20px;
+
+    &__caption{
+        font-family: var(--font-Archivo);
+        font-size: 13px;
+        font-weight: 700;
+        letter-spacing: 3px;
+        color: #BDAC8D;
+        margin-bottom: 25px;
+    }
+
+    &__title{
+        font-family: var(--font-OldStandard);
+        font-size: 40px;
+        font-weight: 400;
+        color: white;
+    }
+
+    &__list-item{
+        padding: 0px 20px 20px 20px;
+    }
+}

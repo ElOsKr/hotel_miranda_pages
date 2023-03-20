@@ -16,6 +16,8 @@
 @use 'roomDetails/amenities';
 @use 'roomDetails/cancellation';
 @use 'roomDetails/related';
+@use 'offers/offers';
+@use 'offers/popular';
 @use 'footer/footer';
 
 html, * {
