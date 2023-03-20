@@ -1,0 +1,24 @@
+.cancellation{
+    margin-top: 100px;
+    padding: 0 20px;
+
+    &__title{
+        font-family: var(--font-OldStandard);
+        font-weight: 400;
+        font-size: 30px;
+        margin-bottom: 15px;
+    }
+
+    hr{
+        border-top: 1px solid #F1F1F1;
+        margin-bottom: 50px;
+    }
+
+    &__description{
+        font-family: var(--font-Roboto);
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: #777777;
+    }
+}
