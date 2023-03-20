@@ -153,6 +153,7 @@
   color: #686868;
   display: flex;
   flex-direction: row-reverse;
+  outline: none;
 }
 .availability__input::-webkit-calendar-picker-indicator {
   background-image: url("../assets/home/home_calendar_icon.png");
@@ -902,6 +903,7 @@
   font-size: 14px;
   padding: 22px 14px;
   color: #777777;
+  outline: none;
 }
 .details__form .form__checkIn input::-webkit-calendar-picker-indicator, .details__form .form__checkOut input::-webkit-calendar-picker-indicator {
   background-image: url("../assets/roomDetails/details_calendar_icon.png");
@@ -1178,6 +1180,121 @@
 }
 .popular__list-item {
   padding: 0px 20px 20px 20px;
+}
+
+.information {
+  padding-top: 25px;
+}
+.information__data {
+  max-width: 450px;
+  position: relative;
+  margin: 50px auto -100px auto;
+}
+.information__data .data__number {
+  text-align: end;
+  position: relative;
+  z-index: 0;
+  font-family: var(--font-Roboto);
+  font-weight: 700;
+  font-size: 200px;
+  top: -120px;
+  color: #F8F8F8;
+}
+.information__data .data__container {
+  margin-top: 50px;
+  width: 100%;
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: space-evenly;
+}
+.information__data .data__container img {
+  -o-object-fit: none;
+     object-fit: none;
+  align-self: flex-start;
+}
+.information__data .data__container .data__data {
+  max-width: 200px;
+  margin-top: 30px;
+}
+.information__data .data__container .data__title {
+  font-family: var(--font-OldStandard);
+  font-size: 20px;
+  font-weight: 400;
+}
+.information__data .data__container .data__data {
+  font-family: var(--font-Roboto);
+  font-size: 14px;
+  font-weight: 400;
+  color: #777777;
+}
+
+.map {
+  padding: 0 20px;
+}
+.map__img {
+  width: 100%;
+  height: 200px;
+}
+.map__img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.contact {
+  padding: 40px 20px;
+  text-align: center;
+}
+.contact input, .contact textarea {
+  width: 100%;
+  padding: 25px 50px;
+  border: none;
+  background-color: #F8F8F8;
+  margin-top: 16px;
+  outline: none;
+  font-family: var(--font-Roboto);
+  font-weight: 400;
+  font-size: 16px;
+  color: #777777;
+}
+.contact__username {
+  background: url(../assets/contact/contact_user_icon.png) no-repeat scroll;
+  background-position-y: 25px;
+  background-position-x: 15px;
+}
+.contact__usertel {
+  background: url(../assets/contact/contact_userPhone_icon.png) no-repeat scroll;
+  background-position-y: 25px;
+  background-position-x: 15px;
+}
+.contact__useremail {
+  background: url(../assets/contact/contact_userMail_icon.png) no-repeat scroll;
+  background-position-y: 25px;
+  background-position-x: 15px;
+}
+.contact__usersubject {
+  background: url(../assets/contact/contact_subject_icon.png) no-repeat scroll;
+  background-position-y: 25px;
+  background-position-x: 15px;
+}
+.contact__usermessage {
+  resize: none;
+  background: url(../assets/contact/contact_pen_icon.png) no-repeat scroll;
+  background-position-y: 25px;
+  background-position-x: 15px;
+}
+.contact__btn {
+  color: white;
+  padding: 20px 102px;
+  font-family: var(--font-Roboto);
+  font-weight: 700;
+  letter-spacing: 3px;
+  cursor: pointer;
+  border: 1px solid #BEAD8E;
+  margin-top: 20px;
+  background-color: #BEAD8E;
 }
 
 .footer {
