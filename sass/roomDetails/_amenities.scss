@@ -1,0 +1,41 @@
+.amenities{
+    padding: 0 20px;
+
+    &__title{
+        font-family: var(--font-OldStandard);
+        font-weight: 400;
+        font-size: 30px;
+        margin-bottom: 15px;
+    }
+
+    hr{
+        border-top: 1px solid #F1F1F1;
+        margin-bottom: 35px;
+    }
+
+    &__items{
+
+        display: grid;
+        justify-content: center;
+        column-gap: 10px;
+        font-family: var(--font-Roboto);
+        font-weight: 500;
+        font-size: 15px;
+        color: #777777;
+        p{
+            display: flex;
+            gap: 8px;
+            align-self: center;
+            img{
+                object-fit: none;
+            }
+
+            &:nth-child(odd){
+                grid-column: 1 / 2;
+            }
+            &:nth-child(even){
+                grid-column: 2 / 3;
+            }
+        }
+    }
+}

@@ -11,6 +11,9 @@
 @use 'about/restaurant';
 @use 'about/facilities_about';
 @use 'about/counter';
+@use 'rooms/rooms_rooms';
+@use 'roomDetails/details';
+@use 'roomDetails/amenities';
 @use 'footer/footer';
 
 html, * {

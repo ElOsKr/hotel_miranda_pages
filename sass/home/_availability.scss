@@ -1,10 +1,5 @@
 $font-Roboto: 'Roboto', 'sans-serif';
 
-::-webkit-calendar-picker-indicator {
-    background-image: url('../assets/home/home_calendar_icon.png');
-    margin-right: 10px;
-  }
-
 .availability{
     background-color: #222222;
     color: white;
@@ -23,7 +18,12 @@ $font-Roboto: 'Roboto', 'sans-serif';
         display: flex;
         flex-direction: row-reverse;
 
-        ::-webkit-calendar-picker-indicator{
+        &::-webkit-calendar-picker-indicator {
+            background-image: url('../assets/home/home_calendar_icon.png');
+            margin-right: 10px;
+          }
+
+        &::-webkit-calendar-picker-indicator{
             color: #BEAD8E;
         }
     }
