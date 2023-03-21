@@ -1,4 +1,17 @@
 .counter{
+
+    .swiper-about{
+        overflow: hidden;
+
+        .swiper-pagination{
+            bottom: var(--swiper-pagination-bottom);
+
+            .swiper-pagination-bullet-active{
+                background: #BEAD8E;
+            }
+        }
+    }
+    
     padding: 20px;
     &__caption{
         font-family: var(--font-Archivo);

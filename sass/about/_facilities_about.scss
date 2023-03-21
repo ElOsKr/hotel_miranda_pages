@@ -3,6 +3,19 @@
     padding: 25px;
     background-color: #222222;
     color: white;
+
+    .swiper-about{
+        overflow: hidden;
+
+        .swiper-pagination{
+            bottom: var(--swiper-pagination-bottom);
+
+            .swiper-pagination-bullet-active{
+                background: #BEAD8E;
+            }
+        }
+    }
+
     &__caption{
         font-family: var(--font-Archivo);
         font-size: 13px;

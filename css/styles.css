@@ -725,6 +725,15 @@
   background-color: #222222;
   color: white;
 }
+.facilities-about .swiper-about {
+  overflow: hidden;
+}
+.facilities-about .swiper-about .swiper-pagination {
+  bottom: var(--swiper-pagination-bottom);
+}
+.facilities-about .swiper-about .swiper-pagination .swiper-pagination-bullet-active {
+  background: #BEAD8E;
+}
 .facilities-about__caption {
   font-family: var(--font-Archivo);
   font-size: 13px;
@@ -781,6 +790,15 @@
 
 .counter {
   padding: 20px;
+}
+.counter .swiper-about {
+  overflow: hidden;
+}
+.counter .swiper-about .swiper-pagination {
+  bottom: var(--swiper-pagination-bottom);
+}
+.counter .swiper-about .swiper-pagination .swiper-pagination-bullet-active {
+  background: #BEAD8E;
 }
 .counter__caption {
   font-family: var(--font-Archivo);
