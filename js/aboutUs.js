@@ -8,10 +8,6 @@ function cargarEventos(){
             el: '.swiper-pagination',
             type: 'bullets',
         },
-
-        autoplay:{
-            delay: 4000,
-        }
     })
 
 }

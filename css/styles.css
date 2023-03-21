@@ -422,10 +422,10 @@
   width: 100%;
   overflow: hidden;
 }
-.facilities .swiper-features .swiper-pagination {
+.facilities .swiper-features .swiper-pagination-features {
   bottom: var(--swiper-pagination-bottom);
 }
-.facilities .swiper-features .swiper-pagination .swiper-pagination-bullet-active {
+.facilities .swiper-features .swiper-pagination-features .swiper-pagination-bullet-active {
   background: #BEAD8E;
 }
 .facilities__caption {
