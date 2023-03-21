@@ -855,6 +855,25 @@
 .rooms-rooms {
   padding: 0 20px;
 }
+.rooms-rooms .swiper-rooms {
+  overflow: hidden;
+  padding-bottom: 30px;
+}
+.rooms-rooms .swiper-rooms .swiper-pagination {
+  bottom: var(--swiper-pagination-bottom);
+  margin-top: 20px;
+}
+.rooms-rooms .swiper-rooms .swiper-pagination .swiper-pagination-bullet {
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  color: black;
+  background: none;
+  border-radius: 0px;
+}
+.rooms-rooms .swiper-rooms .swiper-pagination .swiper-pagination-bullet-active {
+  background: #BEAD8E;
+}
 .rooms-rooms__room {
   background-color: white;
   margin-top: 50px;
@@ -1117,6 +1136,22 @@
   margin-top: 100px;
   margin-bottom: 50px;
 }
+.related .swiper-relatedRooms {
+  overflow: hidden;
+  width: 100%;
+  --swiper-navigation-size: 12px;
+  --swiper-theme-color: black;
+}
+.related .swiper-relatedRooms .swiper-button-prev, .related .swiper-relatedRooms .swiper-button-next {
+  background-color: white;
+  padding: 15px;
+  top: var(--swiper-navigation-top-offset);
+  margin-top: 150px;
+}
+.related .swiper-relatedRooms .swiper-button-prev:hover, .related .swiper-relatedRooms .swiper-button-next:hover {
+  background-color: #BDAC8D;
+  color: white;
+}
 .related__title {
   font-family: var(--font-OldStandard);
   font-weight: 400;
@@ -1235,6 +1270,22 @@
   margin: 60px 0px;
   text-align: center;
   padding: 48px 20px;
+}
+.popular .swiper-offers {
+  overflow: hidden;
+  width: 100%;
+  --swiper-navigation-size: 12px;
+  --swiper-theme-color: black;
+}
+.popular .swiper-offers .swiper-button-prev, .popular .swiper-offers .swiper-button-next {
+  background-color: white;
+  padding: 15px;
+  top: var(--swiper-navigation-top-offset);
+  margin-top: 150px;
+}
+.popular .swiper-offers .swiper-button-prev:hover, .popular .swiper-offers .swiper-button-next:hover {
+  background-color: #BDAC8D;
+  color: white;
 }
 .popular__caption {
   font-family: var(--font-Archivo);

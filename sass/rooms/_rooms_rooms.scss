@@ -1,6 +1,28 @@
 .rooms-rooms{
     padding: 0 20px;
 
+
+    .swiper-rooms{
+        overflow: hidden;
+        padding-bottom: 30px;
+        .swiper-pagination{
+            bottom: var(--swiper-pagination-bottom);
+            margin-top: 20px;
+            .swiper-pagination-bullet{
+                width: 20px;
+                height: 20px;
+                text-align: center;
+                color:black;
+                background: none;
+                border-radius: 0px;
+            }
+            .swiper-pagination-bullet-active{
+                background: #BEAD8E;
+                
+            }
+        }
+    }
+
     &__room{
         background-color: white;
         margin-top: 50px;
