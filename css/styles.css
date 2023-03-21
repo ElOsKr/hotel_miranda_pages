@@ -2,7 +2,7 @@
   position: fixed;
   font-family: var(--font-Archivo);
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.29);
-  z-index: 3;
+  z-index: 99;
   width: 100%;
   background-color: white;
 }
@@ -283,6 +283,20 @@
   text-align: center;
   position: relative;
 }
+.rooms .swiper {
+  width: 100%;
+  --swiper-navigation-size: 12px;
+  --swiper-theme-color: black;
+}
+.rooms .swiper .swiper-button-prev, .rooms .swiper .swiper-button-next {
+  background-color: white;
+  padding: 15px;
+  top: var(--swiper-navigation-top-offset, 30%);
+}
+.rooms .swiper .swiper-button-prev:hover, .rooms .swiper .swiper-button-next:hover {
+  background-color: #BDAC8D;
+  color: white;
+}
 .rooms__caption {
   font-family: var(--font-Archivo);
   font-size: 13px;
@@ -301,11 +315,15 @@
 .rooms__room {
   position: relative;
 }
-.rooms__room .room__options {
+.rooms__room .room__options-home {
+  margin: 0 auto;
+  width: 260px;
+  padding: 16px 0px;
+  background-color: white;
+  display: flex;
+  justify-content: space-evenly;
   position: relative;
-  top: 50px;
-  z-index: 2;
-  margin-top: -50px;
+  bottom: -20px;
 }
 .rooms__room .room__img {
   width: 100%;
@@ -400,6 +418,16 @@
   text-align: center;
   padding: 25px;
 }
+.facilities .swiper-features {
+  width: 100%;
+  overflow: hidden;
+}
+.facilities .swiper-features .swiper-pagination {
+  bottom: var(--swiper-pagination-bottom);
+}
+.facilities .swiper-features .swiper-pagination .swiper-pagination-bullet-active {
+  background: #BEAD8E;
+}
 .facilities__caption {
   font-family: var(--font-Archivo);
   font-size: 13px;
@@ -457,6 +485,30 @@
   padding: 20px;
   position: relative;
 }
+.menu .swiper-menu {
+  width: 100%;
+  overflow: hidden;
+  --swiper-navigation-size: 12px;
+  --swiper-theme-color: black;
+}
+.menu .swiper-menu .swiper-button-prev {
+  left: auto;
+  right: 40px;
+}
+.menu .swiper-menu .swiper-button-prev, .menu .swiper-menu .swiper-button-next {
+  background-color: white;
+  padding: 15px;
+  top: var(--swiper-navigation-top-offset);
+  margin-top: 10px;
+}
+.menu .swiper-menu .swiper-button-prev:hover, .menu .swiper-menu .swiper-button-next:hover {
+  background-color: #BDAC8D;
+  color: white;
+}
+.menu .swiper-menu .swiper-slide {
+  display: flex;
+  flex-direction: column;
+}
 .menu__caption {
   font-family: var(--font-Archivo);
   font-size: 13px;
@@ -470,13 +522,6 @@
   font-weight: 400;
   font-size: 56px;
   overflow-wrap: break-word;
-}
-.menu__foods {
-  margin-top: 32px;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  gap: 20px;
 }
 .menu__icon {
   position: relative;
@@ -494,10 +539,12 @@
   height: 100%;
 }
 .menu__food {
+  margin-top: 20px;
   width: min(100%, 500px);
   display: flex;
   align-items: center;
   gap: 30px;
+  align-self: center;
 }
 .menu__food .food__img {
   width: 120px;
@@ -524,9 +571,16 @@
   font-weight: 400;
 }
 .menu__images {
+  overflow: hidden;
   height: 335px;
   width: min(100%, 500px);
   margin: 60px auto;
+}
+.menu__images.swiper-foodImg .swiper-pagination {
+  bottom: var(--swiper-pagination-bottom, 40px);
+}
+.menu__images.swiper-foodImg .swiper-pagination .swiper-pagination-bullet-active {
+  background: #BEAD8E;
 }
 .menu__images img {
   width: 100%;
