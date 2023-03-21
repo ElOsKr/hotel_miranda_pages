@@ -1445,14 +1445,14 @@
   font-size: 24px;
   margin-bottom: 30px;
 }
-.footer__contact .contact {
+.footer__contact .contact-footer {
   display: flex;
   gap: 20px;
 }
-.footer__contact .contact:nth-child(n+1) {
+.footer__contact .contact-footer:nth-child(n+1) {
   margin-bottom: 60px;
 }
-.footer__contact .contact:last-child {
+.footer__contact .contact-footer:last-child {
   margin-bottom: 0px;
 }
 .footer__copyrigth {
