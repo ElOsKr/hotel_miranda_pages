@@ -191,6 +191,26 @@
   color: #BEAD8E;
 }
 
+@media only screen and (min-width: 1000px) {
+  .introduction {
+    padding-left: 15%;
+  }
+  .introduction__caption {
+    font-size: 14px;
+  }
+  .introduction__title.mainPage {
+    font-size: 120px;
+    line-height: 130px;
+    max-width: 780px;
+  }
+  .introduction__btn {
+    display: inline-block;
+  }
+  .introduction__btn.btn-tour {
+    margin-right: 30px;
+    margin-bottom: 50px;
+  }
+}
 .availability {
   background-color: #222222;
   color: white;
