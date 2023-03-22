@@ -261,6 +261,22 @@
   background-color: #BEAD8E;
 }
 
+@media only screen and (min-width: 1000px) {
+  .availability {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-content: center;
+  }
+  .availability__arrival, .availability__departure {
+    width: min(15%, 210px);
+  }
+  .availability__btn {
+    margin-left: 15%;
+    margin-top: 0px;
+    align-self: center;
+  }
+}
 .aboutUs {
   position: relative;
 }

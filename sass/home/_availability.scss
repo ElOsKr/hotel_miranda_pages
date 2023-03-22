@@ -1,5 +1,3 @@
-$font-Roboto: 'Roboto', 'sans-serif';
-
 .availability{
     background-color: #222222;
     color: white;
@@ -49,5 +47,24 @@ $font-Roboto: 'Roboto', 'sans-serif';
         border: 1px solid #BEAD8E;
         margin-top: 20px;
         background-color: #BEAD8E;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .availability{
+        display: flex;
+        gap: 30px;
+        justify-content: center;
+        align-content: center;
+
+        &__arrival, &__departure{
+            width: min(15%,210px);
+        }
+
+        &__btn{
+            margin-left: 15%;
+            margin-top: 0px;
+            align-self: center;
+        }
     }
 }
