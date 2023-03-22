@@ -89,3 +89,72 @@
         }
     }
 }
+
+@media only screen and (min-width: 1000px) {
+    .header{
+        position: relative;
+        background-color: #222222;
+
+        &__nav{
+            background-color: white;
+            width: 80%;
+            margin: 0 auto;
+            transform: translateY(40px);
+        }
+
+        &__menu{
+            img{
+                display: none;
+
+                &.active{
+                    display: none;
+                }
+            }
+        }
+
+        &__content{
+            justify-content: start;
+            &-menu{
+                margin-left: 100px;
+                display: flex;
+                background-color: white;
+                ul{
+                    display: flex;
+                    gap: 20px;
+                    list-style: none;
+                    li{
+                        align-self: center;
+                        a{
+                            text-decoration: none;
+                            color: black;
+                            font-weight: 700;
+                        }
+                    }
+                }
+            }
+
+            &-name{
+                font-size: 26px;
+                p:first-child{
+                    font-weight: 700;
+                }
+            }
+
+            &-logo{
+                &.logo__letter{
+                    font-size: 40px;
+                }
+            }
+
+            &-options{
+                margin-left: auto;
+
+                img{
+                    padding: 10px;
+                    border: 2px solid rgba(133, 133, 133, 0.3);
+                }
+            }
+        }
+
+    }
+}
