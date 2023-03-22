@@ -87,8 +87,12 @@
   .header {
     position: relative;
     background-color: #222222;
+    display: flex;
+    justify-content: center;
+    height: 100px;
   }
   .header__nav {
+    position: fixed;
     background-color: white;
     width: 80%;
     margin: 0 auto;
@@ -129,6 +133,7 @@
   }
   .header__content-logo.logo__letter {
     font-size: 40px;
+    padding: 10px 20px;
   }
   .header__content-options {
     margin-left: auto;
