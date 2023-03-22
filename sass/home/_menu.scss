@@ -122,3 +122,41 @@
         }
     }
 }
+
+@media only screen and (min-width: 1000px) {
+
+    .menu{
+        .swiper-menu{
+            .swiper-button-next,.swiper-button-prev{
+                padding: 25px;
+                transform: translate(-30px, -500px);
+            }
+            .swiper-button-prev{
+                right: 80px;
+            }
+        }
+        padding-left: 15%;
+        &__icon{
+            overflow: visible;
+            height: 230px;
+            margin-left: -15%;
+            img{
+                left: 30px;
+                width: 230px;
+            }
+        }
+
+        &__images{
+            width: auto;
+            margin-right: 10%;
+
+            .swiper-wrapper{
+                gap: 20px;
+            }
+
+            .swiper-pagination{
+                display: none;
+            }
+        }
+    }
+}
