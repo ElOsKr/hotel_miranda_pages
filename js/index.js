@@ -7,6 +7,14 @@ function cargarEventos(){
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
         },
+        spaceBetween: 30,
+
+        breakpoints:{
+            1000:{
+                loop: false,
+                slidesPerView: 3,
+            }
+        }
     })
 
     const swiperFeatures = new Swiper('.swiper-features',{

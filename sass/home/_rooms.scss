@@ -98,3 +98,35 @@
 
     }
 }
+
+@media only screen and (min-width: 1000px) {
+    .rooms{
+
+        .swiper{
+
+            .swiper-button-prev,.swiper-button-next{
+                padding: 25px;
+                top: var(--swiper-navigation-top-offset,35%);
+        
+            }
+            .swiper-button-prev{
+                left: var(--swiper-navigation-sides-offset,300px);
+            } 
+            .swiper-button-next{
+                right: var(--swiper-navigation-sides-offset,300px);
+            }             
+        }
+
+
+        &__room{
+            .room__img{
+                height: 450px;
+                width: 100%;
+            }
+
+            .room__info{
+                width: 90%;
+            }
+        }
+    }
+}
