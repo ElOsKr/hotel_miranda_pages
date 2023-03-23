@@ -22,3 +22,17 @@
         color: #777777;
     }
 }
+
+@media only screen and (min-width: 1000px) {
+    .cancellation{
+        padding: 100px 25% 0px 15%;
+
+        hr{
+            width: 90%;
+        }
+
+        .rooms-rooms__room.related{
+            width: 370px;
+        }
+    }
+}

@@ -34,3 +34,38 @@
         margin-bottom: 35px;
     }
 }
+
+@media only screen and (min-width: 1000px) {
+    .related{
+        .swiper-relatedRooms{
+            .swiper-slide:last-child{
+                margin-right: 20px;
+            }
+
+            .swiper-button-next{
+                right: var(--swiper-navigation-sides-offset,100px)
+            }
+
+            .swiper-button-prev{
+                left: var(--swiper-navigation-sides-offset,100px)
+            }
+        }
+        padding: 0 15%;
+
+        hr{
+            width: 80%;
+        }
+
+        .rooms-rooms__room.related-room{
+            .room__description{
+                text-align: center;
+                .room__pricing{
+                    .room__price{
+                        font-size: 16px;
+                    }
+                    flex-direction: row;
+                }
+            }
+        }
+    }
+}

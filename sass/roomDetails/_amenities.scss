@@ -96,3 +96,34 @@
         }
     }
 }
+
+@media only screen and (min-width: 1000px) {
+    .amenities{
+        padding: 0 15%;
+
+        &__items{
+            justify-content: flex-start;
+            gap: 20px;
+
+            p{
+                @for $fila from 1 through 4{
+                    &:nth-last-child(#{$fila}){
+                        grid-column: 3 / 4;
+                        grid-row: $fila;
+                    }
+                }            
+            }
+        }
+
+        hr{
+            width: 75%;
+        }
+
+        &__founder{
+            max-width: 370px;
+            padding: 20px;
+            box-shadow: 0px 14px 24px rgba(190, 173, 142, 0.27);
+        }
+
+    }
+}
