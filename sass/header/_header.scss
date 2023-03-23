@@ -91,6 +91,7 @@
 }
 
 @media only screen and (min-width: 1000px) {
+
     .header{
         position: relative;
         background-color: #222222;
@@ -105,6 +106,7 @@
             margin: 0 auto;
             transform: translateY(40px);
             box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.29);
+            transition: all .5s ease-in;
         }
 
         &__menu{
@@ -161,6 +163,10 @@
                 }
             }
         }
+    }
 
+    .transition-top{
+        transform: translateY(-200px);
+        transition: all 1s ease-out;
     }
 }

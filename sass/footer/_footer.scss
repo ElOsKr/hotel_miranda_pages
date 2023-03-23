@@ -137,3 +137,45 @@
         }
     }
 }
+
+@media only screen and (min-width: 1000px) {
+
+    .footer{
+        &__main{
+            padding-left: 15%;
+            display: grid;
+            grid-template-columns: 1fr 2fr 2fr;
+            column-gap: 30px;
+        }
+
+        &__logo{
+            grid-area: 1 / 1 / 2 / 2;
+        }
+
+        &__description{
+            grid-area: 2 / 1 / 3 / 2;
+        }
+
+        &__links{
+            grid-area: 3 / 1 / 4 / 2;
+        }
+
+        &__services{
+            grid-area: 1 / 2 / 4 / 3;
+        }
+
+        &__contact{
+            grid-area: 1 / 3 / 4 / 4;
+        }
+
+        &__copyrigth{
+            display: flex;
+            padding: 30px 10%;
+            justify-content: space-between;
+            p:first-child{
+                margin-bottom: 0px;
+            }
+
+        }
+    }
+}
