@@ -33,6 +33,8 @@ function detectMouse(event){
     if(desktop){
         if(mouseY<200){
             document.getElementsByClassName("header__nav")[0].classList.remove("transition-top")
+        }else if(window.scrollY>200){
+            document.getElementsByClassName("header__nav")[0].classList.add("transition-top")
         }
     }
 }
