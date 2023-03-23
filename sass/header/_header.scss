@@ -36,6 +36,7 @@
         &-logo{
             display: flex;
             align-items: center;
+            cursor: pointer;
             &.logo__letter{
                 position: relative;
                 z-index: 4;

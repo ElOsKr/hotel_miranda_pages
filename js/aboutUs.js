@@ -6,6 +6,7 @@ function cargarEventos(){
         loop: true,
         pagination: {
             el: '.swiper-pagination',
+            clickable: true
         },
         breakpoints:{
             1000:{

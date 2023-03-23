@@ -84,6 +84,10 @@
                 grid-template-columns: repeat(3, 300px);
                 grid-template-rows: repeat(2, 350px);
                 justify-content: center;
+
+                .swiper-slide{
+                    width: 100% !important;
+                }
             }
         }
     }

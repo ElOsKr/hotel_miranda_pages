@@ -36,6 +36,7 @@ function cargarEventos(){
         direction: 'horizontal',
         loop: true,
         pagination:{
+            clickable: true,
             el: '.swiper-pagination',
         },
         breakpoints:{
@@ -46,7 +47,7 @@ function cargarEventos(){
     })
 
     swiperMode();
-    window.addEventListener('resize', swiperMode());
+    window.addEventListener('resize', swiperMode);
 }
 
 let swiperFeatures=Swiper;

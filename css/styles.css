@@ -34,6 +34,7 @@
 .header__content-logo {
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
 .header__content-logo.logo__letter {
   position: relative;
@@ -673,6 +674,9 @@
     grid-template-columns: repeat(3, 300px);
     grid-template-rows: repeat(2, 350px);
     justify-content: center;
+  }
+  .facilities .swiper-features .swiper-wrapper .swiper-slide {
+    width: 100% !important;
   }
 }
 .menu {
