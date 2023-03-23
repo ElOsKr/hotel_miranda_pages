@@ -53,6 +53,44 @@
                     filter: brightness(2);
                 }
             }
+
+            &.bbq{
+                display: none;
+                img{
+                    width: 54px;
+                    height: 54px;
+                }
+            }
+            &.luxury{
+                padding-top: 50px;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+
+    .description{
+        padding: 0 15%;
+        &__video{
+            margin-top: 120px;
+            height: 500px;
+        }
+
+        &__introduction{
+            font-size: 72px;
+            text-align: center;
+        }
+
+        &__services{
+            width: 100%;
+
+            .service{
+
+                &.bbq{
+                    display: block;
+                }
+            }
         }
     }
 }

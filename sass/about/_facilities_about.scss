@@ -76,3 +76,22 @@
         }
     }
 }
+
+@media only screen and (min-width: 1000px) {
+    .facilities-about{
+        padding: 25px 30px;
+        .swiper-about{
+            .swiper-wrapper{
+                display: grid;
+                gap: 20px;
+                grid-template-columns: repeat(3, 300px);
+                grid-template-rows: repeat(2, 350px);
+                justify-content: center;
+
+                .swiper-slide{
+                    width: 100%!important;
+                }
+            }
+        }
+    }
+}

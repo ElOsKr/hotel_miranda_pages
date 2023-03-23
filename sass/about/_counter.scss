@@ -1,6 +1,6 @@
 .counter{
 
-    .swiper-about{
+    .swiper-about-counter{
         overflow: hidden;
 
         .swiper-pagination{
@@ -68,4 +68,30 @@
             object-fit: cover;
         }
     }
+}
+
+@media only screen and (min-width: 1000px) {
+
+    .counter{
+
+        &__container{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        padding: 80px 10%;
+        &__img{
+            height: 400px;
+        }   
+        
+        .swiper-about-counter{
+            .swiper-wrapper{
+                gap: 20px;
+            }
+            .swiper-pagination{
+                display: none;
+            }
+        }
+    }
+
 }
