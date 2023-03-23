@@ -8,6 +8,15 @@ function cargarEventos(){
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
         },
+
+        spaceBetween:20,
+
+        breakpoints:{
+            1000:{
+                loop: false,
+                slidesPerView: 3,
+            }
+        }
     })
 
 }

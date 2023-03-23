@@ -1575,6 +1575,7 @@
 @media only screen and (min-width: 1000px) {
   .cancellation {
     padding: 100px 25% 0px 15%;
+    margin-top: 0;
   }
   .cancellation hr {
     width: 90%;
@@ -1631,13 +1632,13 @@
   .related hr {
     width: 80%;
   }
-  .related .rooms-rooms__room.related-room .room__description {
+  .related .rooms-rooms__room.popular-room .room__description {
     text-align: center;
   }
-  .related .rooms-rooms__room.related-room .room__description .room__pricing {
+  .related .rooms-rooms__room.popular-room .room__description .room__pricing {
     flex-direction: row;
   }
-  .related .rooms-rooms__room.related-room .room__description .room__pricing .room__price {
+  .related .rooms-rooms__room.popular-room .room__description .room__pricing .room__price {
     font-size: 16px;
   }
 }
@@ -1743,6 +1744,51 @@
   background-color: #BEAD8E;
 }
 
+@media only screen and (min-width: 1000px) {
+  .offers {
+    padding: 120px 10%;
+  }
+  .offers__offer .offer__img {
+    height: 570px;
+  }
+  .offers__offer .offer__price {
+    z-index: 3;
+    right: 10%;
+  }
+  .offers__offer .offer__container {
+    padding: 0 40px;
+    background-color: white;
+    position: relative;
+    top: -130px;
+    z-index: 2;
+    width: 85%;
+    margin: 0 auto;
+  }
+  .offers__offer .offer__caption {
+    padding-top: 30px;
+  }
+  .offers__offer .offer__title {
+    border-bottom: solid 2px #ECECEC;
+  }
+  .offers__offer .offer__description {
+    margin-top: 30px;
+  }
+  .offers__offer .offer__content {
+    display: grid;
+    -moz-column-gap: 20px;
+         column-gap: 20px;
+  }
+  .offers__offer .offer__description {
+    grid-area: 1/1/2/2;
+  }
+  .offers__offer .offer__items {
+    grid-area: 1/2/3/3;
+    max-height: 180px;
+  }
+  .offers__offer .offer__btn {
+    grid-area: 2/1/3/2;
+  }
+}
 .popular {
   background-color: #222222;
   margin: 60px 0px;
@@ -1783,6 +1829,17 @@
   padding: 0px 20px 20px 20px;
 }
 
+@media only screen and (min-width: 1000px) {
+  .popular .rooms-rooms__room.popular-room .room__description {
+    text-align: center;
+  }
+  .popular .rooms-rooms__room.popular-room .room__description .room__pricing {
+    flex-direction: row;
+  }
+  .popular .rooms-rooms__room.popular-room .room__description .room__pricing .room__price {
+    font-size: 16px;
+  }
+}
 .information {
   padding-top: 25px;
 }

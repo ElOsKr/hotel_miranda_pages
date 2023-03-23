@@ -43,3 +43,19 @@
         padding: 0px 20px 20px 20px;
     }
 }
+
+@media only screen and (min-width: 1000px) {
+    .popular{
+        .rooms-rooms__room.popular-room{
+            .room__description{
+                text-align: center;
+                .room__pricing{
+                    .room__price{
+                        font-size: 16px;
+                    }
+                    flex-direction: row;
+                }
+            }
+        }
+    }
+}
